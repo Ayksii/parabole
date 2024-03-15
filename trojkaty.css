@@ -1,0 +1,37 @@
+#triangle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#triangle-container svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#triangle-container svg polygon {
+  fill: none;
+  stroke: #6c63ff;
+  stroke-width: 2;
+  animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+#start-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50
